@@ -5,7 +5,6 @@ print_r($_FILES);
 
 if($_FILES):
 
-	$ext_type = array('gif','jpg','jpe','jpeg','png');
 	$arquivo = $_FILES['arquivo'];
 
 	for ($i = 0; $i < count($_FILES['arquivo']['name']) ; $i++) { 
@@ -14,8 +13,6 @@ if($_FILES):
 		} else {
 			echo "Erro ao enviar a imagem.\n\r";
 		}
-	}
-
-	
+	}	
  
 endif;
